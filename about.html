@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Learn about Book Haven Bookstore, view store hours, and contact us with feedback or custom order requests."
+  >
+  <title>Book Haven Bookstore | About Us</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">
+      <img
+  src="Client3_LogoPalette1_C7B65E.png"
+  alt="Book Haven Bookstore logo"
+  class="site-logo"
+/>
+
+      <div>
+        <h1>Book Haven Bookstore</h1>
+        <p>Your next great read is waiting.</p>
+      </div>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html" aria-current="page">About Us</a>
+      <a href="community.html">Community &amp; Events</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">Our Story</p>
+        <h2>About Book Haven</h2>
+        <p>
+          Book Haven Bookstore is a local destination for book enthusiasts,
+          students, and knowledge seekers. We offer a diverse selection of
+          books, magazines, journals, office supplies, and bookish merchandise.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section">
+
+      <div class="about-content">
+        <h2>A Place for Readers</h2>
+
+        <p>
+          Book Haven is committed to fostering literary exploration and a
+          lifelong love of reading. Our goal is to create an inviting space
+          where customers can discover new stories, explore ideas, and connect
+          with a vibrant literary community.
+        </p>
+
+        <p>
+          Whether you are searching for your next favorite book, a magazine
+          for your latest interest, or useful reading and writing accessories,
+          Book Haven provides quality materials for curious minds.
+        </p>
+      </div>
+
+      <div class="hours-card">
+        <h2>Hours of Operation</h2>
+
+        <table>
+          <caption>Book Haven weekly business hours</caption>
+          <tbody>
+            <tr>
+              <th scope="row">Monday–Friday</th>
+              <td>9 a.m. – 8 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Saturday</th>
+              <td>10 a.m. – 6 p.m.</td>
+            </tr>
+            <tr>
+              <th scope="row">Sunday</th>
+              <td>11 a.m. – 5 p.m.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <section class="contact-section">
+
+      <div class="contact-intro">
+        <p class="eyebrow">Get in Touch</p>
+        <h2>Feedback &amp; Custom Orders</h2>
+
+        <p>
+          Have feedback for Book Haven or need help finding something
+          specific? Complete the form below. You can also use this form
+          to request a custom order.
+        </p>
+      </div>
+
+      <form id="contact-form">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="request-type">What can we help you with?</label>
+          <select id="request-type" name="requestType" required>
+            <option value="">Select an option</option>
+            <option value="feedback">Customer Feedback</option>
+            <option value="custom-order">Custom Order</option>
+            <option value="product-inquiry">Product Inquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Feedback or Custom Order Details</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input
+            type="checkbox"
+            id="contact-permission"
+            name="contactPermission"
+          >
+          <label for="contact-permission">
+            You may contact me regarding my request.
+          </label>
+        </div>
+
+        <button type="submit">Submit Request</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <section class="newsletter">
+      <h2>Stay in the Story</h2>
+      <p>Subscribe to the Book Haven newsletter for news and updates.</p>
+
+      <form class="newsletter-form">
+        <label for="about-newsletter-email">Email Address</label>
+
+        <div class="newsletter-controls">
+          <input
+            type="email"
+            id="about-newsletter-email"
+            name="email"
+            placeholder="reader@example.com"
+            required
+          >
+          <button type="submit">Subscribe</button>
+        </div>
+      </form>
+    </section>
+
+    
+    <div class="footer-bottom">
+    <p>&copy; 2026 Book Haven Bookstore. All rights reserved.</p>
+
+    <nav aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="community.html">Community &amp; Events</a>
+    </nav>
+  </div>
+
+</footer>
+
+</body>
+</html>
